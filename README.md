@@ -1,3 +1,3 @@
 # GPS Clock
 
-### Desk clock for HAM shack and for POTA
+### _Desk clock for HAM shack and for POTA_
