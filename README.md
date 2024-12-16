@@ -1,3 +1,3 @@
 # GPS Clock
 
-### Desk clock for amateur radio and POTA
+### Desk clock for HAM shack and for POTA
