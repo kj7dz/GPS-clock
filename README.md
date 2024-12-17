@@ -4,7 +4,7 @@
  The orignal arduino sketch came from his [Github site](https://github.com/bhall66/GPS-clock)
  ![image](images/assembly-small.jpg)
  * Features
- 	* 3 unique display options
+ 	* (3) display choices
 	* Personalized CALL sign
 	* GRID square location
 	* 12/24 Local time
