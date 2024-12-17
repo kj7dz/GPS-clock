@@ -3,14 +3,16 @@
  This GPS clock is based clock original GPS clock project came from Bruce Hall's (W8BH) [web site.](http://http://w8bh.net)
  This arduino sketch is from his [Github site](https://github.com/bhall66/GPS-clock)
  
+ ![image](images/assembly-small.jpg)
+ 
 * Features
-	* 3 unique display options
+ 	* 3 unique display options
 	* Personalized CALL sign
-	* GRID square
+	* GRID square location
 	* 12/24 Local time
 	* 24 UTC time
 	* 6-24 VDC operation
-	* Used for the shack, POTA or SOTA
+	* Useful in the shack, POTA or SOTA
 	  	
 * [GPS Clock](#GPS-clock)
  	* [Hardware](#Hardware)
@@ -24,12 +26,11 @@
 **Bill of Materials**
 
 This is the list of components to build a GPS Clock.  You may already have some of these parts.
-The STM32 developer board can be either 64k or 128k flash.
 
 
 | Item | Qty | Part | Link | Approx Price |
 | --- | --- | --- | --- | --- |
-| 1. | 1 | Printed Circuit Board | [link](mailto:fhoonhout@yahoo.com) | $10.00 (free shipping)
+| 1. | 1 | Printed Circuit Board | [link](mailto:fhoonhout@yahoo.com) | $10.00
 | 2. | 1 | STM32F103CBT6 (128K) | [link](https://www.ebay.com/itm/146271505505?_trkparms=amclksrc%3DITM%26aid%3D1110013%26algo%3DHOMESPLICE.SIMRXI%26ao%3D1%26asc%3D264183%26meid%3D204337e245c54480922628bd426e66fa%26pid%3D101196%26rk%3D1%26rkt%3D12%26sd%3D294007193254%26itm%3D146271505505%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DSimRXIVINativeV2WithSellersOwnItemsFilter&_trksid=p2332490.c101196.m2219&itmprp=cksum%3A146271505505204337e245c54480922628bd426e66fa%7Cenc%3AAQAJAAABEMd7r5mNjkO12hUFN8%252BUjou0r36TWdG4ts9ki5yV37PLn%252BNOULI4btYgHvyZLxyhY1os0HAEAobM6wo2B1iQL8RodZY4QhYqwxpJzfN1Y2q9IGWqLYWGU7hLZZZcQo6A0pcDJ5MUMyM68e2IJlXfrmj5gkJQbKHOHMeW%252BGHOD4g8RAnCugxnh9AfLs%252FK1JdyONgAb4KOVVOwChnBf5hmGfczu5HwcQa%252F7sbMylP2bQjNlSxymquEOsL11suVoyip%252BUpIhUCgfHEuUyfJ%252BZIVIhQW0ZELxZFWykQP3izuMhtAapMwi9298FqRtVNGZZGiHlWfS8onFqnqVZUt5mfckP6ZTEdpL9oTFWlnnk6GKyq1%7Campid%3APL_CLK%7Cclp%3A2332490&epid=14037797509&itmmeta=01JF97E6T3P4EZB37HDWVJAW20) | $ 2.89
 | 3. | 1 | 3.2" ILI9341 TFT LCD Display | [link](https://www.amazon.com/DIANN-ILI9341-Display-320x240-Screen/dp/B0BNQD38T2/ref=sr_1_3?crid=25Y7X8C5SN7SN&dib=eyJ2IjoiMSJ9.pePHSofagpEUo7DsQUbYFYq95NsHgDaTkP7PEzlg_Of4-eWST-755toDv8o5hfYtASDvz9A-YoN9szuZupvdv9vjFr6V3jHUM7aUpDldwoC9iFSHctcutB8Y1Pzcz_pnrhesANA1_UFlkAw878D8sIynNk8M7SDz2w6EnE3k5UQsDG2-BVc8aJXMpSKcdXCqPssvwOtNt-DEibVeEeoCO0aFoyNlvv0aPjayNUFa3a8.Kw3Zpo53MkY16LpWvdpszbyXRU5Q2yVnhrcqRO3daHo&dib_tag=se&keywords=3.2%2Binch%2Btft%2Blcd%2Bdisplay&qid=1734403210&sprefix=3.2%2Binch%2Btft%2Blcd%2Bdisplay%2Caps%2C179&sr=8-3&th=1) | $13.89
 | 4. | 1 | GPS+BDS Dual Mode module | [link](https://www.amazon.com/DWEII-Dual-Mode-Satellite-Positioning-Replacement/dp/B0B68C1W94/ref=sr_1_4?crid=1SJZ329LMVFMF&dib=eyJ2IjoiMSJ9._va0qNlb7f2IDJS0x_jvVPrL7AoAxPQeVVihj-Kj7w63Y-lAhvsENhaUk2qGioVSEXpg8dJ11FJo3hGKal0pvy4ivjZhakiQssBiJP0G1aQr7wDNVL2gUyq0UziCfaV24wl-X-Swbr4jhkj99z1WCud9yYPi0j94i6-ZiZ8q-sCzwwC02Plp2rmJnrStS_eJYO3ajR1QY0CK1Ixhe_6rV4yz7wGJMS8TThGBhLuo9Uk.UlJ8eqKrvBmdBJ60Sh2zPno8C1NyLaqXtpV0hK0Veo0&dib_tag=se&keywords=NEO-M8N%2BNEO-6M&qid=1734403413&sprefix=neo-m8n%2Bneo-6m%2Caps%2C266&sr=8-4&th=1) | $11.99
@@ -40,8 +41,10 @@ The STM32 developer board can be either 64k or 128k flash.
 | 9. | 1 | 3D Printed Case | [link]() | 
 
 **Details of Materials**
-* PCB
-	* The PCB can be order directly from KJ7DZ.
-	* Bill Pill development board (STMEWF103CBT6)
-
+* **PCB** - The PCB can be order directly from KJ7DZ. **FREE** shipping.
+* **STM32** -  BluePill micro-controller comes in 32K, 64K or 128K versions. Current code just fits in 64k flash.
+* **3.2" TFT LCD Display** - Be sure to the 3.2" display supports 3.3V and has the touch screen feature.
+* **GPS module** - In some situations the include GPS antenna may not work some indoor settings. An [28db High Gain antenna](https://www.amazon.com/Ceramic-Navigation-Receiver-Tracking-Interface/dp/B0C3H6BKHC/ref=sr_1_8?crid=1I0MV4RVO0TNZ&dib=eyJ2IjoiMSJ9.lL4ooPKPGgA5h5VuxkmYvPUl_FR0r55a4stbuSNrFrytdNhvfazz2xxBdv-gezQpTJsOEfH16PXE0if69B1TT6zHNGZQUE7t9Eta2Z3GC1L8NOysKiwpZ-r_OSZ2yOuxrnpGSQvcXJfKFUqg0jCQKHx9CFF26VYBR1eyED0ArIxkJvYULcBpoCDrRfGzyM8ITipxuHB5EvP7TTjLEX67G2q9KkAwkfmqcfR03G7-rsM.aEtePunQGbgx7Ad7t4G7SemYj-KpGrESdnYNR3LeeE8&dib_tag=se&keywords=GPS+32dbi+antenna&qid=1734466215&sprefix=gps+32dbi+antenna%2Caps%2C152&sr=8-8) maybe needed.
+* **DC-DC Buck converter** - It is **CRITICAL** to set the buck converter output to be **3.3 VDC** output.
+* **1N4001 diode** - Diode is to protection diode for reverse voltage.  A similar diode can be used. 
 	
