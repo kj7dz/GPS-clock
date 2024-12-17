@@ -3,15 +3,14 @@
  This GPS clock is based clock original GPS clock project came from Bruce Hall's (W8BH) [web site.](http://http://w8bh.net)
  This arduino sketch is from his [Github site](https://github.com/bhall66/GPS-clock)
  
- *	Features
-   * [GPS Clock](https://github.com/bhall66/GPS-clock?tab=readme-ov-file#GPS-clock)
- 	*	Hardware
- 		* Bill of Materials
+* Features
+* [GPS Clock](#GPS-clock)
+ 	* [Hardware](#Hardware)
+ 		* [Bill of Materials](Bill-of-Materials)
  		* Detailed Bill of Materials
- 	* 	Assembly
- 		* 	PCB
- 		* 	Case
- 		* 	Software / Programming
+		* Assembly
+		* 3D printed enclosure
+* 	Software / Programming
 
 ## Hardware
 **Bill of Materials**
