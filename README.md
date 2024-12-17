@@ -17,7 +17,7 @@
  		* [Detailed of Materials](#Details-of-Materials)
 		* Assembly
 		* 3D printed enclosure
-* 	[Software / Programming](software.md)
+* 	[Software / Programming](documentation/Software.md)
 
 ## Hardware
 **Bill of Materials**
