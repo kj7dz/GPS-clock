@@ -11,7 +11,7 @@
  	* 	Assembly
  		* 	PCB
  		* 	Case
- 	* 	Software / Programming
+ 		* 	Software / Programming
 
 ## Hardware
 **Bill of Materials**
