@@ -12,10 +12,10 @@
 	* 6-24 VDC operation
 	* Useful in the shack, POTA or SOTA
 * [GPS Clock](#gps-clock)
- 	* [Hardware](#Hardware)
- 		* [Bill of Materials](Bill-of-Materials)
- 		* [Material details](#material-details)
-		* [Assembly](https://github.com/kj7dz/GPS-clock/blob/main/documentation/Assembly%20instructions%20for%20GPS%20clock.pdf)
+  * [Hardware](#Hardware)
+  * [Bill of Materials](bill-of-materials)
+  * [Material details](#material-details)
+  * [Assembly](https://github.com/kj7dz/GPS-clock/blob/main/documentation/Assembly%20instructions%20for%20GPS%20clock.pdf)
 * 	[Software / Programming](documentation/Software.md)
 
 ## Hardware
