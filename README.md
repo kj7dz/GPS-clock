@@ -1,11 +1,9 @@
 # GPS-Clock
 
  This GPS clock is based clock original GPS clock project came from Bruce Hall's (W8BH) [web site.](http://http://w8bh.net)
- This arduino sketch is from his [Github site](https://github.com/bhall66/GPS-clock)
- 
+ The orignal arduino sketch came from his [Github site](https://github.com/bhall66/GPS-clock)
  ![image](images/assembly-small.jpg)
- 
-* Features
+ * Features
  	* 3 unique display options
 	* Personalized CALL sign
 	* GRID square location
@@ -13,7 +11,6 @@
 	* 24 UTC time
 	* 6-24 VDC operation
 	* Useful in the shack, POTA or SOTA
-	  	
 * [GPS Clock](#GPS-clock)
  	* [Hardware](#Hardware)
  		* [Bill of Materials](Bill-of-Materials)
