@@ -3,9 +3,9 @@
  This GPS clock is based clock original GPS clock project came from Bruce Hall's (W8BH) [web site.](http://http://w8bh.net)
  The orignal arduino sketch came from his [Github site](https://github.com/bhall66/GPS-clock)
  ![image](images/assembly-small.jpg)
- * Features
- 	* (3) display choices
-	* Personalized CALL sign
+* Features
+	* (3) unique displays (GPS Time, UTC/Local Time, GPS Location and time)
+	* Personal CALL sign
 	* GRID square location
 	* 12/24 Local time
 	* 24 UTC time
