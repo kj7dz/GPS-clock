@@ -1,13 +1,13 @@
 /**************************************************************************
        Title:   GPS Clock with TFT display
       Author:   Bruce E. Hall, w8bh.net
-        Date:   12 May 2022
-    Hardware:   Blue Pill Microcontroller, 2.8" ILI9341 TFT display,
-                Adafruit "Ultimate GPS" module v3
-    Software:   Arduino IDE version  1.8.13 
-                STM32 core version   2.2.0  
-                TFT_eSPI library     2.4.32     
-                Time library         1.6.0
+        Date:   17 Dec 2024
+    Hardware:   Blue Pill Microcontroller, 3.2" ILI9341 TFT display,
+                GPS+BDS Dual Mode module
+    Software:   Arduino IDE version  2.3.4 
+                STM32 core version   2.9.0  
+                TFT_eSPI library     2.5.43     
+                Time library         1.6.1
                 TinyGPSPlus library  1.0.3
                 Timezone library     1.2.4
        Legal:   Copyright (c) 2022  Bruce E. Hall.
@@ -54,10 +54,10 @@
 #include <TinyGPS++.h>                             // https://github.com/mikalhart/TinyGPSPlus
 #include <Timezone.h>                              // https://github.com/JChristensen/Timezone
 
-TimeChangeRule PDT                                 // Local Timezone setup. My zone is EST/EDT.
-  = {"PDT", Second, Sun, Mar, 2, -420};            // Set Daylight time here.  UTC-4hrs
+TimeChangeRule PDT                                 // Local Timezone setup. My zone is PST/PDT.
+  = {"PDT", Second, Sun, Mar, 2, -420};            // Set Daylight time here.  UTC-7hrs
 TimeChangeRule PST                                 // For ex: "First Sunday in Nov at 02:00"
-  = {"PST", First, Sun, Nov, 2, -480};             // Set Standard time here.  UTC-5hrs
+  = {"PST", First, Sun, Nov, 2, -480};             // Set Standard time here.  UTC-8hrs
 TimeChangeRule *tz;                                // pointer to current time change rule
 Timezone myTZ(PDT, PST);                           // create timezone object with rules above
 
