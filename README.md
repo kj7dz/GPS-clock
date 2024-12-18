@@ -1,6 +1,6 @@
 # GPS-Clock
 
- This GPS clock is based clock original GPS clock project from Bruce Hall's (W8BH) [web site.](http://http://w8bh.net)
+ This GPS clock is based clock original GPS clock project from Bruce Hall's (W8BH) [web site.](http://w8bh.net)
  The orignal arduino sketch came from his [Github site](https://github.com/bhall66/GPS-clock)
  ![image](images/assembly-small.jpg)
 * Features
