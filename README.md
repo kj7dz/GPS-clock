@@ -31,7 +31,7 @@ This is the list of components to build a GPS Clock.  You may already have some 
 | 8. | 1 | 40 pin male pin header | [link](https://www.amazon.com/MCIGICM-Header-2-45mm-Arduino-Connector/dp/B07PKKY8BX/ref=sr_1_3?crid=1WERD56X0O7QX&dib=eyJ2IjoiMSJ9.ta8Z8Op10qrZHbS0nd10UJSeSsjI8ShuLcBIB1Hp-oOOXc6Jt4kb5rvcHPXNI5s2-ZQRC6FisLpEVCHog2mXETq5IizGwtFm37zy-Yo8LmP3JSdrFfo6TjXfHQUOuEQLEIK7yZ0w3QCM3Z0oa7amVmcUM3eTNoBxAVLOj8KXuNoyEgjujv9WJsd9JydEp2pg1TkKDLQI7_O5m9xryIqYh04dWDIuPrfkqmF1s3JWKn45JrEfRmjEiyIt_zsutxde34_i4gFe2wNZ0yJmQlQhAeAOzPtjS-PP-XdaKzhpM8Rawskn9p0Hsg7-WiPd2__8oOvMLl-R92qBwRDYkyqSVO0n8TPrAsdnG0_G-IAQ9g8.5kgpTNjLMtLvbV0Wj2CYNJu5MLoxrS_-VyHmqJKkfZ0&dib_tag=se&keywords=male+pin+header&qid=1734404042&s=electronics&sprefix=male+pin+header%2Celectronics%2C191&sr=1-3) | $ 5.98 
 | 9. | 1 | 3D Printed Case | [link](https://www.thingiverse.com/thing:6877107) | Free download
 
-**Assembled clock or kit is available upon request.** *(includes programming the STM32)*
+** Clock / kit is available upon request.** *(includes tz and call sign programming)*
 
 **Material details**
 * **PCB** - The PCB can be order directly from KJ7DZ. **FREE** shipping.
