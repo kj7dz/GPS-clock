@@ -18,8 +18,8 @@ https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectron
 In this section you need to configure the sketch parameters prior to uploading to the ST32M development board module.  
 
 * Download the GPS sketch file from [here](https://github.com/kj7dz/GPS-clock/blob/main/Sketch%20code/GPS_Clock_Triplel_STM_32.ino) and save it locally.
-* Launch Arduino IDE software and open the GPS sketch file.
-* Change line 57 - 62 to match your timezone.  Sketch is already set to **Pacific Time Zone**.
+* Launch Arduino IDE software and open the GPS sketch file you downloaded.
+* Looking at this [image](https://github.com/kj7dz/GPS-clock/blob/main/images/GPS%20sketch.jpg), verfiy you have the correct timezone settings the sketch.  The sketch is already set to **Pacific Time Zone**.
 ```css
 TimeChangeRule EDT                                 // Timezone setup for EST/EDT.
   = {"EDT", Second, Sun, Mar, 2, -240};            // Set Daylight time here.  UTC-4hrs
@@ -52,13 +52,10 @@ TimeChangeRule PST                                 // For ex: "First Sunday in N
 TimeChangeRule *tz;                                // pointer to current time change rule
 Timezone myTZ(PDT, PST);                           // create timezone object with rules above
 ```
-	 
-* Scroll down to line 64
-	* Replace URCALL with your CALL Sign. (do not remove the quotes)
+* Also replace **URCALL** with your CALL Sign. (do not remove the quotes)
 * Compile your sketch and verify that there are NO errors.
 
 ## 3. Setting board parameters in Arduino IDE
-
 * From the Tools -> Board -> STM32 boards (set to) -> Generic STM32F1
 * From the Tools -> Board -> Board Part Number -> Blue Pill F103CB (or C8 with 128k)
 * From the Tools -> Upload Method -> STM32CubeProgrammer (SWD)
