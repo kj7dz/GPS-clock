@@ -19,7 +19,7 @@ In this section you need to configure the sketch parameters prior to uploading t
 
 * Download the GPS sketch file from [here](https://github.com/kj7dz/GPS-clock/blob/main/Sketch%20code/GPS_Clock_Triplel_STM_32.ino) and save it locally.
 * Launch Arduino IDE software and open the GPS sketch file you downloaded.
-* Looking at this [image](https://github.com/kj7dz/GPS-clock/blob/main/images/GPS%20sketch.jpg), verfiy you have the correct timezone settings the sketch.  The sketch is already set to **Pacific Time Zone**.
+* Looking at this [image](https://github.com/kj7dz/GPS-clock/blob/main/images/GPS%20sketch.jpg), verfiy you have the correct timezone settings the sketch.  The sketch is **Pacific Time Zone**.
 ```css
 TimeChangeRule EDT                                 // Timezone setup for EST/EDT.
   = {"EDT", Second, Sun, Mar, 2, -240};            // Set Daylight time here.  UTC-4hrs
@@ -70,7 +70,7 @@ Using the ST-Link V2 USB programmer module, connect it to the STM32 as follows.
 | 3.3V |  - | 3.3V |
 | GND  | - | GND |
 | SWDIO | - | DIO |
-| SWCLK | - | -CLK | 
+| SWCLK | - | CLK | 
 * Connect the ST-LINK to an open USB port
 	* In Windows device Manager, you should see the [following](https://github.com/kj7dz/GPS-clock/blob/main/images/Device%20Mgr.jpg) STM32 STLink device.
 * Launch the Arduino IDE program
