@@ -33,7 +33,7 @@ This is the list of components to build a GPS Clock.  You may already have some 
 | 10.  | 1 | ST-link V2 USB programmer | [link](https://www.amazon.com/HiLetgo-Emulator-Downloader-Programmer-STM32F103C8T6/dp/B07SQV6VLZ/ref=sr_1_1_sspa?crid=2YNPVA66W8J3U&dib=eyJ2IjoiMSJ9.qqFD5Om07FWVxJ7mURnZvPpK6rtpUdy6Rl2Wp2nDTWrQUIQTsD49-dYAYdIp_YmHTtKGIiT4ksUOlBfdJspv_qb8b6UzsUIIx3dNi5Ipnkp3XyQ2dTub7WLHOvkA7NQH1lxDp5Aqp7wP_2rYEk4e0SOsENj_U770PiuukFvbBDQ9UDZyNEqwaHOXgCPK7HhZP6CXMkZXOC0FjiCnAvrkq8zYK2EDDrgtCVUIZBlQ9sE.29pe5Xmxd8adZRCZaG6TbFNp0-vnzOoCWU99m4w2X_g&dib_tag=se&keywords=stlink+v2+usb&qid=1734542614&sprefix=stlink+v2+usb%2Caps%2C205&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) | $ 9.49
 | 11. | 1 | 3D Printed Case | [link](https://www.thingiverse.com/thing:6877107) | Thingiverse
 
-**Clock or kit are available upon request** _(includes programming)_
+**Fully assembled GPS Clock and KIT are available** _(includes programming)_
 
 **Material details**
 * **PCB** - The PCB can be order directly from KJ7DZ. _(includes shipping)_
