@@ -41,7 +41,8 @@ This is the list of components to build a GPS Clock.  You may already have some 
 * **1N4001 diode** - The diode is for reverse voltage protection.  A similar diode can be used. 
 
 **Contributers**
-|Bruce |W8BH |
+
+| Bruce |W8BH |
 | --- | --- |
 | Ken | WB2ART |
 | Frank | KJ7DZ |
