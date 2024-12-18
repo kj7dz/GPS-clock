@@ -1,4 +1,4 @@
-# Software 
+# Software / Programming
 The Instructions provide are provide as reference. Author assumes **NO** responsibility for any programming mishaps.
 
 ### 1. Setting up the Arduino IDE
@@ -54,10 +54,31 @@ Timezone myTZ(PDT, PST);                           // create timezone object wit
 ```
 * Also replace **URCALL** with your CALL Sign. (do not remove the quotes)
 * Compile your sketch and verify that there are NO errors.
+* **Save your GPS sketch!!**
 
 ## 3. Setting board parameters in Arduino IDE
+For the boards settings, follow the instructions below and verify [here](https://github.com/kj7dz/GPS-clock/blob/main/images/Board%20Settings.png)
 * From the Tools -> Board -> STM32 boards (set to) -> Generic STM32F1
 * From the Tools -> Board -> Board Part Number -> Blue Pill F103CB (or C8 with 128k)
 * From the Tools -> Upload Method -> STM32CubeProgrammer (SWD)
-*  
+## 4. Programming the STM32 module
+Using the ST-Link V2 USB programmer module, connect it to the STM32 as follows.
+* With the 4-wire cable, [attached them](https://github.com/kj7dz/GPS-clock/blob/main/images/Programmer%201.png) to the corresponding pins:
+
+|ST-Link | Cable| STM32 (4 pin header) |
+| --- | - | --- |
+| 3.3V |  - | 3.3V |
+| GND  | - | GND |
+| SWDIO | - | DIO |
+| SWCLK | - | -CLK | 
+* Connect the ST-LINK to an open USB port
+	* In Windows device Manager, you should see the [following](https://github.com/kj7dz/GPS-clock/blob/main/images/Device%20Mgr.jpg) STM32 STLink device.
+* Launch the Arduino IDE program
+* Load the GPS sketch with the changes
+* Click on the green circle with check mark in it to verify the sketch.  Fix if there are errors.
+* Click on the green circuit with arrow in it and watch the log file for a successfull upload.
+* Disconnect the STM32 from the ST-Link
+* Install the STM32 back on the PCB, make sure the USB port faces towards the power connector.
+* Enjoy!!
+  
 
