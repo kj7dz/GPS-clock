@@ -36,7 +36,7 @@ This is the list of components to build a GPS Clock.  You may already have some 
 
 **Material details**
 * **PCB** - The PCB can be order directly from KJ7DZ. *(includes shipping)*
-* **STM32** -  BluePill micro-controller comes in 32K, 64K or 128K versions. Current code just fits into 64k of ROM flash.
+* **STM32** - The STM32 controller comes in 32K, 64K or 128K versions. Sketch just fits into 64k of ROM flash.
 * **3.2" TFT LCD Display** - Be sure the display supports 3.3V and supports the touch screen.
 * **GPS module** - Verify the GPS cable is seated correctly.  In some situations the include GPS antenna may not work. A [28db High Gain antenna](https://www.amazon.com/Ceramic-Navigation-Receiver-Tracking-Interface/dp/B0C3H6BKHC/ref=sr_1_8?crid=1I0MV4RVO0TNZ&dib=eyJ2IjoiMSJ9.lL4ooPKPGgA5h5VuxkmYvPUl_FR0r55a4stbuSNrFrytdNhvfazz2xxBdv-gezQpTJsOEfH16PXE0if69B1TT6zHNGZQUE7t9Eta2Z3GC1L8NOysKiwpZ-r_OSZ2yOuxrnpGSQvcXJfKFUqg0jCQKHx9CFF26VYBR1eyED0ArIxkJvYULcBpoCDrRfGzyM8ITipxuHB5EvP7TTjLEX67G2q9KkAwkfmqcfR03G7-rsM.aEtePunQGbgx7Ad7t4G7SemYj-KpGrESdnYNR3LeeE8&dib_tag=se&keywords=GPS+32dbi+antenna&qid=1734466215&sprefix=gps+32dbi+antenna%2Caps%2C152&sr=8-8) maybe used.
 * **DC-DC Buck converter** - It is **CRITICAL** to set the buck converter to **3.3 VDC** output.
