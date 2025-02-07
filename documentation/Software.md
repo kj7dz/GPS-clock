@@ -5,12 +5,7 @@ The Instructions provide are provide as reference. Author assumes **NO** respons
 Portions of this section maybe omitted if you already have Arduino IDE installed.  
 
 * Download the latest Arduino IDE software for you platform from [here](https://www.arduino.cc/en/Main/Software) and install it.
-* From File -> Preferences, add the following string to "Additional boards manager URLs" box.
-```css
-https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
-```
-[Adding STM32 Boards to Arduino Board library](https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started)
-
+* Add the STM32 Boards to Arduino Board [library](https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started)
 * Install the following [modules](https://github.com/kj7dz/GPS-clock/blob/main/images/IDE%20modules.jpg) to the Aruduino IDE "Library Manager"
 	* **TFT_eSPI** by [Bodmer](https://github.com/Bodmer/TFT_eSPI)
 	* **Time** [Michael Margolis](https://github.com/PaulStoffregen/Time)
