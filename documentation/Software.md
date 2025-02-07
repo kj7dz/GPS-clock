@@ -11,7 +11,7 @@ https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectron
 ```
 [Adding STM32 Boards to Arduino Board library](https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started)
 
-* Add the following [modules](https://github.com/kj7dz/GPS-clock/blob/main/images/IDE%20modules.jpg) to the Aruduino IDE "Library Manager"
+* Install the following [modules](https://github.com/kj7dz/GPS-clock/blob/main/images/IDE%20modules.jpg) to the Aruduino IDE "Library Manager"
 	* **TFT_eSPI** by [Bodmer](https://github.com/Bodmer/TFT_eSPI)
 	* **Time** [Michael Margolis](https://github.com/PaulStoffregen/Time)
 	* **Timezone** by [Jack Christensen](https://github.com/JChristensen/Timezone)
