@@ -9,11 +9,13 @@ Portions of this section maybe omitted if you already have Arduino IDE installed
 ```css
 https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
 ```
+[Adding STM32 Boards to Arduino Board library](https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started)
+
 * Add the following [modules](https://github.com/kj7dz/GPS-clock/blob/main/images/IDE%20modules.jpg) to the Aruduino IDE "Library Manager"
-	* **TFT_eSPI** by Bodmer
-	* **Time** Michael Margolis
-	* **Timezone** by Jack Christensen
-	* **TinyGPSPlus** by Mikal Hart 		
+	* **TFT_eSPI** by [Bodmer](https://github.com/Bodmer/TFT_eSPI)
+	* **Time** [Michael Margolis](https://github.com/PaulStoffregen/Time)
+	* **Timezone** by [Jack Christensen](https://github.com/JChristensen/Timezone)
+	* **TinyGPSPlus** by [Mikal Hart](https://github.com/mikalhart/TinyGPSPlus)   
 ### 2. Setting up the GPS sketch 
 In this section you need to configure the sketch parameters prior to uploading to the ST32M development board module.  
 
