@@ -10,7 +10,9 @@ Portions of this section maybe omitted if you already have Arduino IDE installed
 	* **TFT_eSPI** by [Bodmer](https://github.com/Bodmer/TFT_eSPI)
 	* **Time** [Michael Margolis](https://github.com/PaulStoffregen/Time)
 	* **Timezone** by [Jack Christensen](https://github.com/JChristensen/Timezone)
-	* **TinyGPSPlus** by [Mikal Hart](https://github.com/mikalhart/TinyGPSPlus)   
+	* **TinyGPSPlus** by [Mikal Hart](https://github.com/mikalhart/TinyGPSPlus)
+ * You will also need to install [STM32CubeProgrammer software](https://www.st.com/en/development-tools/stm32cubeprog.html#get-software)
+   
 ### 2. Setting up the GPS sketch 
 In this section you need to configure the sketch parameters prior to uploading to the ST32M development board module.  
 
