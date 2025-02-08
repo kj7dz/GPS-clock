@@ -1,6 +1,8 @@
 # Software / Programming
 The Instructions provide are provide as reference. Author assumes **NO** responsibility for any programming mishaps.
 
+Original GPS clock [document](http://w8bh.net/gps_clock.pdf) from W8BH. 
+
 ### 1. Setting up the Arduino IDE
 Portions of this section maybe omitted if you already have Arduino IDE installed.  
 
