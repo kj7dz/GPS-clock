@@ -78,7 +78,7 @@ Using the ST-Link V2 USB programmer module, connect it to the STM32 as follows.
 * Launch the Arduino IDE program
 * Load the GPS sketch with the changes
 * Click on the green circle with check mark in it to verify the sketch.  Fix if there are errors.
-	* If you get **TOUCH_CS pin not defined** error, in the **/libaries/TFT_eSPI/User_Setup.h** file, uncomment **# define TOUCH_CS PIN_D2**
+  	* If you get **TOUCH_CS pin not defined** error, in the **/libaries/TFT_eSPI/User_Setup.h** file, uncomment **# define TOUCH_CS PIN_D2**
 * Click on the green circuit with arrow in it and watch the log file for a successfull upload.
 * Disconnect the STM32 from the ST-Link
 * Install the STM32 back on the PCB, make sure the USB port faces towards the power connector.
