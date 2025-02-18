@@ -1,19 +1,21 @@
 # Software / Programming
-The Instructions provide are provide as reference. Author assumes **NO** responsibility for any programming mishaps.
+The Instructions provide are provide as reference information. Author assumes that you are experience with Arudino software.
+Author assumes **NO** responsibility for any programming mishaps.
+
+Original GPS clock [document](http://w8bh.net/gps_clock.pdf) from W8BH. 
 
 ### 1. Setting up the Arduino IDE
 Portions of this section maybe omitted if you already have Arduino IDE installed.  
 
 * Download the latest Arduino IDE software for you platform from [here](https://www.arduino.cc/en/Main/Software) and install it.
-* From File -> Preferences, add the following string to "Additional boards manager URLs" box.
-```css
-https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
-```
-* Add the following [modules](https://github.com/kj7dz/GPS-clock/blob/main/images/IDE%20modules.jpg) to the Aruduino IDE "Library Manager"
-	* **TFT_eSPI** by Bodmer
-	* **Time** Michael Margolis
-	* **Timezone** by Jack Christensen
-	* **TinyGPSPlus** by Mikal Hart 		
+* Add the STM32 Boards to Arduino Board [library](https://github.com/stm32duino/Arduino_Core_STM32/wiki/Getting-Started)
+* Install the following [modules](https://github.com/kj7dz/GPS-clock/blob/main/images/IDE%20modules.jpg) to the Aruduino IDE "Library Manager"
+	* **TFT_eSPI** by [Bodmer](https://github.com/Bodmer/TFT_eSPI)
+	* **Time** [Michael Margolis](https://github.com/PaulStoffregen/Time)
+	* **Timezone** by [Jack Christensen](https://github.com/JChristensen/Timezone)
+	* **TinyGPSPlus** by [Mikal Hart](https://github.com/mikalhart/TinyGPSPlus)
+ * You will also need to install [STM32CubeProgrammer software](https://www.st.com/en/development-tools/stm32cubeprog.html#get-software)
+   
 ### 2. Setting up the GPS sketch 
 In this section you need to configure the sketch parameters prior to uploading to the ST32M development board module.  
 
@@ -76,6 +78,7 @@ Using the ST-Link V2 USB programmer module, connect it to the STM32 as follows.
 * Launch the Arduino IDE program
 * Load the GPS sketch with the changes
 * Click on the green circle with check mark in it to verify the sketch.  Fix if there are errors.
+  	* If you get **TOUCH_CS pin not defined** error, in the **/libaries/TFT_eSPI/User_Setup.h** file, uncomment **# define TOUCH_CS PIN_D2**
 * Click on the green circuit with arrow in it and watch the log file for a successfull upload.
 * Disconnect the STM32 from the ST-Link
 * Install the STM32 back on the PCB, make sure the USB port faces towards the power connector.
