@@ -15,8 +15,14 @@ Portions of this section maybe omitted if you already have Arduino IDE installed
 	* **Timezone** by [Jack Christensen](https://github.com/JChristensen/Timezone)
 	* **TinyGPSPlus** by [Mikal Hart](https://github.com/mikalhart/TinyGPSPlus)
  * You will also need to install [STM32CubeProgrammer software](https://www.st.com/en/development-tools/stm32cubeprog.html#get-software)
-   
-### 2. Setting up the GPS sketch 
+  
+## 2. Setting board parameters in Arduino IDE
+For the boards settings, follow the instructions below and verify [here](https://github.com/kj7dz/GPS-clock/blob/main/images/Board%20Settings.png)
+* From the Tools -> Board -> STM32 boards (set to) -> Generic STM32F1
+* From the Tools -> Board -> Board Part Number -> Blue Pill F103CB (or C8 with 128k)
+* From the Tools -> Upload Method -> STM32CubeProgrammer (SWD)
+* 
+### 3. Setting up the GPS sketch 
 In this section you need to configure the sketch parameters prior to uploading to the ST32M development board module.  
 
 * Download the GPS sketch file from [here](https://github.com/kj7dz/GPS-clock/blob/main/Sketch%20code/GPS_Clock_Triplel_STM_32.ino) and save it locally.
@@ -58,11 +64,7 @@ Timezone myTZ(PDT, PST);                           // create timezone object wit
 * Compile your sketch and verify that there are NO errors.
 * **Save your GPS sketch!!**
 
-## 3. Setting board parameters in Arduino IDE
-For the boards settings, follow the instructions below and verify [here](https://github.com/kj7dz/GPS-clock/blob/main/images/Board%20Settings.png)
-* From the Tools -> Board -> STM32 boards (set to) -> Generic STM32F1
-* From the Tools -> Board -> Board Part Number -> Blue Pill F103CB (or C8 with 128k)
-* From the Tools -> Upload Method -> STM32CubeProgrammer (SWD)
+
 ## 4. Programming the STM32 module
 Using the ST-Link V2 USB programmer module, connect it to the STM32 as follows.
 * With the 4-wire cable, [attached them](https://github.com/kj7dz/GPS-clock/blob/main/images/Programmer%201.png) to the corresponding pins:
@@ -84,4 +86,3 @@ Using the ST-Link V2 USB programmer module, connect it to the STM32 as follows.
 * Install the STM32 back on the PCB, make sure the USB port faces towards the power connector.
 * Enjoy!!
   
-
