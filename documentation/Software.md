@@ -21,7 +21,7 @@ For the boards settings, follow the instructions below and verify [here](https:/
 * From the Tools -> Board -> STM32 boards (set to) -> Generic STM32F1
 * From the Tools -> Board -> Board Part Number -> Blue Pill F103CB (or C8 with 128k)
 * From the Tools -> Upload Method -> STM32CubeProgrammer (SWD)
-* 
+
 ### 3. Setting up the GPS sketch 
 In this section you need to configure the sketch parameters prior to uploading to the ST32M development board module.  
 
