@@ -1,9 +1,9 @@
 /**************************************************************************
        Title:   GPS Clock with TFT display
       Author:   Bruce E. Hall, w8bh.net
-        Date:   17 Dec 2024
+        Date:   04 Dec 2024
     Hardware:   Blue Pill Microcontroller, 3.2" ILI9341 TFT display,
-                GPS+BDS Dual Mode module
+                Adafruit "Ultimate GPS" module v3
     Software:   Arduino IDE version  2.3.4 
                 STM32 core version   2.9.0  
                 TFT_eSPI library     2.5.43     
@@ -46,6 +46,11 @@
                     speed = gps.speed.kmph (kilometers per hour)
                     speed = gps.speed.mps (meters per second)
                Also, change the year/month/date order in showDate() to suit your preference.
+               Screen orientation = 1
+                    Touch points x=false y=true
+               Screen orientation = 3 (screen flipped 180 degrees)
+                    Touch points x=true y=false
+                    
 
  **************************************************************************/
 
@@ -54,15 +59,15 @@
 #include <TinyGPS++.h>                             // https://github.com/mikalhart/TinyGPSPlus
 #include <Timezone.h>                              // https://github.com/JChristensen/Timezone
 
-TimeChangeRule PDT                                 // Local Timezone setup. My zone is PST/PDT.
-  = {"PDT", Second, Sun, Mar, 2, -420};            // Set Daylight time here.  UTC-7hrs
+TimeChangeRule PDT                                 // Local Timezone setup. My zone is EST/EDT.
+  = {"PDT", Second, Sun, Mar, 2, -420};            // Set Daylight time here.  UTC-4hrs
 TimeChangeRule PST                                 // For ex: "First Sunday in Nov at 02:00"
-  = {"PST", First, Sun, Nov, 2, -480};             // Set Standard time here.  UTC-8hrs
+  = {"PST", First, Sun, Nov, 2, -480};             // Set Standard time here.  UTC-5hrs
 TimeChangeRule *tz;                                // pointer to current time change rule
 Timezone myTZ(PDT, PST);                           // create timezone object with rules above
 
-#define callsign              "URCALL"             // used in void updateDisplay() - added 7/2022 KenK
-#define callsignPos           120                  // position of callsign in horizontal space - change # to center callsign - added 8/2022 KenK
+#define callsign            "URCALL"             // used in void updateDisplay() - added 7/2022 KenK
+#define callsignPos           115                  // position of callsign in horizontal space - change # to center callsign - added 8/2022 KenK
 #define BACKLIGHT              PB1                 // pin for screen backlight control
 #define AUDIO                  PB9                 // microcontroller audio output pin
 #define GPS_TX                PA10                 // GPS data on hardware serial RX1
@@ -90,8 +95,8 @@ Timezone myTZ(PDT, PST);                           // create timezone object wit
 #define LABEL_BGCOLOR     TFT_BLUE
 
 #define SCREEN_ORIENTATION       1                 // landscape mode, should be '1' or '3'
-#define TOUCH_FLIP_X          true                 // touch: left-right orientation      
-#define TOUCH_FLIP_Y         false                 // touch: up-down orientation
+#define TOUCH_FLIP_X         false                 // touch: left-right orientation      
+#define TOUCH_FLIP_Y          true                 // touch: up-down orientation
 #define TOUCH_ADJUST_X           0                 // touch: fine tune x-coordinate
 #define TOUCH_ADJUST_Y           0                 // touch: fine tune y-coordinate 
 
